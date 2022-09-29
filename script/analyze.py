@@ -6,8 +6,7 @@ def main_script():
     from openpyxl.workbook import Workbook
     #from gui_code import get_genotype
     #from open_file  import file_path
-    df = pd.read_csv (r"C:\Users\prakr\OneDrive\Desktop\Term paper\burs_nachbac_baseline.csv",dtype=object)
-    
+    df = pd.read_excel(r"C:\Users\prakr\OneDrive\Desktop\burs_nachbac_baseline.xlsx",sheet_name="Gen1",dtype=object)
     df = df.iloc[range(0,len(df),1),0:32]
     df = df[0:1440]
     list1,list2,list3,count1,count2,count3,numerator,denominator,mph = ([] for i in range(9))
