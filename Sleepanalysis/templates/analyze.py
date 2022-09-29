@@ -1,11 +1,6 @@
 def main_script():
     import pandas as pd
     import math 
-    import numpy as np
-    from scipy.stats import sem
-    from openpyxl.workbook import Workbook
-    #from gui_code import get_genotype
-    #from open_file  import file_path
     df = pd.read_excel(r"C:\Users\prakr\OneDrive\Desktop\burs_nachbac_baseline.xlsx",sheet_name="Gen1",dtype=object)
     df = df.iloc[range(0,len(df),1),0:32]
     df = df[0:1440]
